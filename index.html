@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hotel</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+</head>
+<body style="
+                    background-image: url('assets/images/hotel.jpg');
+                    background-size: cover;
+                    height: 100vh;
+                    "
+>
+
+<div id="app">
+    <header class="text-white">
+        <div class="mask h-100"
+             style="background-image: linear-gradient(to bottom,rgba(0,0,0,0.7),rgba(255,255,255,0));">
+            <div class="container d-flex justify-content-between py-2">
+                <a href="index.html" class="navbar-brand text-white">
+                    <strong>HOTEL</strong>
+                </a>
+                <nav class="nav nav-pills">
+                    <a href="index.html" class="nav-link text-white">Главная</a>
+                    <a href="login.html" class="nav-link text-white">Вход</a>
+                    <a href="login.html" class="nav-link text-white">Выход</a>
+                </nav>
+                <form class="my-2">
+                    <div class="input-group">
+                        <input class="form-control" type="search" placeholder="Поиск заявки по коду"
+                               aria-label="Search">
+                        <div class="input-group-append">
+                            <a href="booking.html" class="btn btn-outline-light" type="submit">Найти</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </header>
+    <div class="container d-flex justify-content-center ">
+        <form class="bg-dark rounded-3 p-5 position-absolute top-50 start-50 translate-middle"
+              style="--bs-bg-opacity: .7;">
+            <h3 class="text-white">Бронирование номера</h3>
+            <div class="row">
+                <div class="col-4">
+                    <!-- Заезд -->
+                    <div class="form-outline mb-4">
+                        <label class="form-label text-white-50">Дата заезда</label>
+                        <input type="date" class="form-control">
+                    </div>
+                </div>
+                <div class="col-4">
+                    <!-- Выезд -->
+                    <div class="form-outline mb-4">
+                        <label class="form-label text-white-50">Дата выезда</label>
+                        <input type="date" class="form-control"/>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="form-outline mb-4">
+                        <label class="form-label text-white-50">Количество гостей</label>
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected disabled value="">Количество</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex justify-content-end">
+                <a href="addBooking.html" type="submit" class="btn btn-success btn-block ">Бронировать</a>
+            </div>
+        </form>
+    </div>
+</div>
+</body>
+</html>

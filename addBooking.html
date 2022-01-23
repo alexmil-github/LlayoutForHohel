@@ -17,7 +17,6 @@
             <nav class="nav nav-pills">
                 <a href="index.html" class="nav-link text-white">Главная</a>
                 <a href="login.html" class="nav-link text-white">Вход</a>
-                <a href="login.html" class="nav-link text-white">Выход</a>
             </nav>
             <form class="d-flex my-2">
                 <div class="input-group ">
@@ -37,14 +36,14 @@
             </div>
             <form>
                 <div class="row">
-                    <div class="col-6 mb-3">
+                    <div class="col-md-6 mb-3">
                         <!-- Заезд -->
                         <div class="form-outline mb-2">
                             <label class="form-label">Дата заезда*</label>
                             <input type="date" class="form-control">
                         </div>
                     </div>
-                    <div class="col-6 mb-3">
+                    <div class="col-md-6 mb-3">
                         <!-- Заезд -->
                         <div class="form-outline mb-2">
                             <label class="form-label">Дата отъезда*</label>
@@ -54,12 +53,12 @@
                 </div>
                 <div class="form-outline mb-4">
                     <div class="row">
-                        <div class="col-3">
+                        <div class="col-md-4 col-sm-6">
                             <div class="card mb-3">
                                 <img class="card-img-top" src="assets/images/placeholder-blue.png"
                                      alt="placeholder">
                                 <div class="card-img-overlay">
-                                    <div class="d-flex justify-content-between">
+                                    <div class="d-md-flex justify-content-between">
                                         <span class="badge bg-info mb-3">10000 руб</span>
                                         <input type="radio" class="btn-check" name="category" id="category1"
                                                autocomplete="off" checked>
@@ -104,12 +103,12 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-3">
+                        <div class="col-md-4 col-sm-6">
                             <div class="card mb-3">
                                 <img class="card-img-top" src="assets/images/placeholder-blue.png"
                                      alt="placeholder">
                                 <div class="card-img-overlay">
-                                    <div class="d-flex justify-content-between">
+                                    <div class="d-md-flex justify-content-between">
                                         <span class="badge bg-info mb-3">15000 руб</span>
                                         <input type="radio" class="btn-check" name="category" id="category2"
                                                autocomplete="off">
@@ -155,12 +154,12 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-3">
+                        <div class="col-md-4 col-sm-6">
                             <div class="card mb-3">
                                 <img class="card-img-top" src="assets/images/placeholder-blue.png"
                                      alt="placeholder">
                                 <div class="card-img-overlay">
-                                    <div class="d-flex justify-content-between">
+                                    <div class="d-md-flex justify-content-between">
                                         <span class="badge bg-info mb-3">10000 руб</span>
                                         <input type="radio" class="btn-check" name="category" id="category3"
                                                autocomplete="off">
@@ -206,12 +205,12 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-3">
+                        <div class="col-md-4 col-sm-6">
                             <div class="card mb-3">
                                 <img class="card-img-top" src="assets/images/placeholder-blue.png"
                                      alt="placeholder">
                                 <div class="card-img-overlay">
-                                    <div class="d-flex justify-content-between">
+                                    <div class="d-md-flex justify-content-between">
                                         <span class="badge bg-info mb-3">10000 руб</span>
                                         <input type="radio" class="btn-check" name="category" id="category4"
                                                autocomplete="off">
@@ -265,45 +264,43 @@
                                 <h5 class="card-title">
                                     Данные гостя №1
                                 </h5>
-                                <button type="button" class="btn-close btn-close-white" aria-label="Close"
-                                        disabled></button>
                             </div>
                             <div class="card-body">
                                 <div class="row">
-                                    <div class="form-outline mb-4 col-4">
+                                    <div class="form-outline mb-4 col-md-4">
                                         <label class="form-label">Фамилия</label>
                                         <input type="text" class="form-control">
                                     </div>
-                                    <div class="form-outline mb-4 col-4">
+                                    <div class="form-outline mb-4 col-md-4">
                                         <label class="form-label">Имя*</label>
                                         <input type="text" class="form-control">
                                     </div>
-                                    <div class="form-outline mb-4 col-4">
+                                    <div class="form-outline mb-4 col-md-4">
                                         <label class="form-label">Отчество</label>
                                         <input type="text" class="form-control">
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div class="col-6 mb-3">
+                                    <div class="col-md-6 mb-3">
                                         <div class="form-outline mb-2">
                                             <label class="form-label">Дата рождения*</label>
                                             <input type="date" class="form-control">
                                         </div>
                                     </div>
-                                    <div class="col-6 mb-3">
+                                    <div class="col-md-6 mb-3">
                                         <label class="form-label">Пол*</label>
                                         <div class="d-flex flex-row border p-1">
                                             <div class="form-check mx-2">
                                                 <input class="form-check-input" type="radio" name="exampleRadios"
-                                                       id="" value="option1" checked>
-                                                <label class="form-check-label" for="exampleRadios1">
+                                                       id="gender_1" value="м" checked>
+                                                <label class="form-check-label" for="gender_1">
                                                     мужской
                                                 </label>
                                             </div>
                                             <div class="form-check mx-2">
                                                 <input class="form-check-input" type="radio" name="exampleRadios"
-                                                       id=" " value="option2">
-                                                <label class="form-check-label" for="exampleRadios2">
+                                                       id="gender_2" value="ж">
+                                                <label class="form-check-label" for="gender_2">
                                                     женский
                                                 </label>
                                             </div>
@@ -315,10 +312,10 @@
                                     <label class="form-label">Документ, удостоверяющий личность*</label>
                                     <div class="input-group mb-3">
                                         <select class="form-select" aria-label="Default select example">
-                                            <option selected disabled value="">Выбор типа документа</option>
-                                            <option value="1">One</option>
-                                            <option value="2">Two</option>
-                                            <option value="3">Three</option>
+                                            <option value="1">Паспорт гражданина РФ</option>
+                                            <option value="2">Свидетельство о рождении</option>
+                                            <option value="3">Паспорт иностранного гражданина</option>
+                                            <option value="4">Военный билет</option>
                                         </select>
                                         <input type="text" class="form-control" placeholder="Номер документа">
                                     </div>
@@ -326,17 +323,6 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="d-grid gap-2">
-                    <button type="button" class="btn btn-outline-primary small">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
-                             class="bi bi-person-plus-fill" viewBox="0 0 16 16">
-                            <path d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
-                            <path fill-rule="evenodd"
-                                  d="M13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5z"/>
-                        </svg>
-                        Добавить гостя
-                    </button>
                 </div>
                 <div class="row mt-5">
                     <div class="col-6 mb-3">
